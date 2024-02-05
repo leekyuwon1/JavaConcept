@@ -65,5 +65,13 @@ public class Different{
     }
 }
 ```
-`Example example = new Example();` 이 부분이 객체 혹은 인스턴스라 한다.
-> 이 부분은 example에 new Example()로 생성한 객체의 참조값을 담는다. 라고 생각하자.
+* `Example example` Example 타입을 받을수 있는 **변수를 선언**.
+* `Example example = new Example();` 이 부분이 객체 혹은 인스턴스라 한다.
+> 이 부분은 "example에 new Example()로 생성한 객체의 참조값을 담는다." 라고 생각하자.
+
+<br>
+
+#### 참조값을 변수에 보관해야 하는 이유 ?
+객체를 생성하는 `new Example()` 코드 자체에는 아무런 이름이 없다. 단순히 `Example` 클래스를 기반으로 메모리에 실제 객체를 만드는 것이다.
+따라서 생성한 객체에 접근할 수 있는 방법이 필요한게 그게 변수를 생성하는 것이다.
+
