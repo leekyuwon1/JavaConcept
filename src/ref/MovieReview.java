@@ -1,4 +1,4 @@
-package class1.test;
+package ref;
 
 public class MovieReview {
     String title;

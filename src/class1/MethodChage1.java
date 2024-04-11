@@ -3,14 +3,17 @@ package class1;
 public class MethodChage1 {
 
     public static void main(String[] args) {
-        String a = "안녕하세요";
-        System.out.println("method before a = " + a);
-        chagePrimitive(a);
-        System.out.println("method after a = " + a);
+        Data data = new Data();
+        data.a = 10;
+        System.out.println("method before a = " + data.a);
+        chagePrimitive(data);
+        System.out.println("method after a = " + data.a);
     }
 
-    static String chagePrimitive(String x) {
-        x = "반갑습니다.";
-        return x;
+    static void chagePrimitive(Data a) {
+        Data.a = 20;
     }
+}
+class Data{
+    static int a;
 }
