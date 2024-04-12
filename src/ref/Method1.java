@@ -4,7 +4,7 @@ public class Method1 {
 
     public static void main(String[] args) {
         Student student1 = new Student(); // 참조값(주소값)이 다르다. 얘는 001
-        initStudent(student1, "학생1", 18, 90);
+        initStudent(student1, "학생1", 18, 90); // 변수 student1의 참조값(주소값)이 넘어간다.
 //        student1.name = "학생1";
 //        student1.age = 18;
 //        student1.grade = 90;
