@@ -1,6 +1,6 @@
 package oop1;
 
-public class ValueObjectMian {
+public class ValueObjectMain {
 
     public static void main(String[] args) {
         ValueData valueData = new ValueData();
