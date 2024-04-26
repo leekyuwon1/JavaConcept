@@ -10,7 +10,7 @@ public class DecoData {
 //        instanceMethod(); // 인스턴스 메서드 접근, compile error
 
         /**
-         * static 은 클래스 소속, 하지만 인스턴스 변수, 인스턴스 메서드는 객체가 생성되어서 메모리에 할당이 되어야 참조값으로 찾아갈 수 있다.
+         * static 은 클래스 레벨, 하지만 인스턴스 변수, 인스턴스 메서드는 객체가 생성되어서 메모리에 할당이 되어야 참조값으로 찾아갈 수 있다.
          * */
         staticValue++; // 정적 변수 접근
         staticMethod(); // 정적 메서드 접근
