@@ -16,11 +16,11 @@ public class MathArrayUtils {
     }
 
     public static double average(int[] arrays) {
-        double total = 0;
-        for (int array : arrays) {
-            total += array;
-        }
-        return total / arrays.length;
+//        double total = 0;
+//        for (int array : arrays) {
+//            total += array;
+//        }
+        return (double) sum(arrays) / arrays.length;
     }
 
     public static int min(int[] arrays) {
