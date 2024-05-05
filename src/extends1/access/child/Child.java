@@ -15,6 +15,7 @@ public class Child extends Parent {
 //        defaultMethod(); // 같은 패키지만 가능
 //        privateMethod(); // 같은 클래스만 가능
 
+        printParent();
     }
 
 }
