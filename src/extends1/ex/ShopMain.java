@@ -11,7 +11,7 @@ public class ShopMain {
         album.print();
         movie.print();
 
-        int sum = book.getPrice() + album. getPrice() + movie.getPrice();
+        int sum = book.getPrice() + album.getPrice() + movie.getPrice();
         System.out.println("상품 가격의 합: " + sum);
 
     }
