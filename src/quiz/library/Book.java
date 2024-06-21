@@ -11,6 +11,10 @@ public class Book {
         this.isbn = isbn;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
     public void displayInfo() {
         System.out.println("Title: " + title + ", Author: " + author + ", ISBN: " + isbn);
     }

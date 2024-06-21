@@ -17,8 +17,9 @@ public class LibrarySystem {
         library.addMember(bob);
 
         library.displayBooks();
-//        library.displayMembers();
-//
+        library.displayMembers();
+
+        library.searchBookByTitle("Effective Java");
 //        alice.borrowBook(book1);
 //        bob.borrowBook(book2);
 //
