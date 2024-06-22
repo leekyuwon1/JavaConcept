@@ -10,16 +10,18 @@ public class LibrarySystem {
         library.addBook(book1);
         library.addBook(book2);
 
-        Borrower alice = new Borrower("Alice", 1);
-        Borrower bob = new Borrower("Bob", 2);
+        LibraryMember alice = new LibraryMember("Alice", 1);
+        LibraryMember bob = new LibraryMember("Bob", 2);
 
-        library.addMember(alice);
-        library.addMember(bob);
+
+        alice.addMember(alice);
+        bob.addMember(bob);
 
         library.displayBooks();
-        library.displayMembers();
+        alice.displayMemberInfo();
 
         library.searchBookByTitle("Effective Java");
+
 //        alice.borrowBook(book1);
 //        bob.borrowBook(book2);
 //

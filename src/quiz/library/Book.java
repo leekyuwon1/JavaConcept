@@ -15,7 +15,12 @@ public class Book {
         return title;
     }
 
-    public void displayInfo() {
+    public void findAllBooks() {
+        System.out.println("Title: " + title + ", Author: " + author + ", ISBN: " + isbn);
+    }
+
+    public void findByBook(String title) {
+        System.out.println("책 찾기: " + title);
         System.out.println("Title: " + title + ", Author: " + author + ", ISBN: " + isbn);
     }
 }
