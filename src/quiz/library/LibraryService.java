@@ -1,9 +1,10 @@
-package quiz.library.library2;
+package quiz.library;
 
 public class LibraryService {
 
     private Book[] books;
     private int count;
+    private boolean Exist;
 
     public void addBook(Library library) {
         if (library instanceof Book book) {
@@ -18,16 +19,11 @@ public class LibraryService {
     }
 
     public void displayBooks() {
-        System.out.println("Library Book:");
+        System.out.println("책 목록:");
         for (int i = 0; i < books.length; i++) {
-            books[i].findAllBooks();
+            Book book = books[i];
+            book.findByAll(book);
         }
     }
 
-//    public void displayMembers() {
-//        System.out.println("Library Members:");
-//        for (int i = 0; i < members.length; i++) {
-//            System.out.println("이름: " + members[i].getName() + ", 아이디: " + members[i].getMemberId());
-//        }
-//    }
 }

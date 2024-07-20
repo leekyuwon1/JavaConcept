@@ -1,6 +1,6 @@
 package quiz.library;
 
-public class Book {
+public class Book implements Library {
     private String title;
     private String author;
     private String isbn;
@@ -11,16 +11,13 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void findAllBooks() {
+    @Override
+    public void findByAll(Library library) {
         System.out.println("Title: " + title + ", Author: " + author + ", ISBN: " + isbn);
     }
 
-    public void findByBook(String title) {
-        System.out.println("책 찾기: " + title);
-        System.out.println("Title: " + title + ", Author: " + author + ", ISBN: " + isbn);
-    }
+//    public void findByBook(String title) {
+//        System.out.println("책 찾기: " + title);
+//        System.out.println("Title: " + this.title + ", Author: " + author + ", ISBN: " + isbn);
+//    }
 }
