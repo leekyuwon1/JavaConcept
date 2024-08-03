@@ -5,20 +5,23 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt(); // 총 금액
-        int n = sc.nextInt(); // 구매한 물건의 갯수
-        int a = sc.nextInt(); // 아이템 가격
-        int b = sc.nextInt(); // 아이템 갯수
+        int x = sc.nextInt();
+        int n = sc.nextInt();
 
+        int c = 0;
+        int result = 0;
 
-        while (true) {
-            int result = a * b;
-            if (result == x) {
-                System.out.println("Yes");
-                break;
-            }else{
-                System.out.println("No");
-            }
+        while (c != n) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            result += a * b;
+            c++;
+        }
+
+        if (x == result) {
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
         }
     }
 }
