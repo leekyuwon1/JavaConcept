@@ -5,23 +5,17 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
         int n = sc.nextInt();
+        sc.close();
 
-        int c = 0;
-        int result = 0;
-
-        while (c != n) {
-            int a = sc.nextInt();
-            int b = sc.nextInt();
-            result += a * b;
-            c++;
-        }
-
-        if (x == result) {
-            System.out.println("Yes");
-        }else{
-            System.out.println("No");
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < i; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 }
